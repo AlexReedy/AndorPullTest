@@ -9,8 +9,10 @@ import andor
 # import paramiko
 
 SITE_ROOT = os.path.abspath(os.path.dirname(__file__)+'/../..')
-print(SITE_ROOT)
-with open(os.path.join(SITE_ROOT, '../../config', 'logging.json')) as data_file:
+#with open(os.path.join(SITE_ROOT, '../../config', 'logging.json')) as data_file:
+    #params = json.load(data_file)
+
+with open(os.path.join('/home/wintermute/Software/AndorPullTest/config', 'logging.json')) as data_file:
     params = json.load(data_file)
 
 logger = logging.getLogger("ifu_cameraLogger")
