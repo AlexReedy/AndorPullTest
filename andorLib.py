@@ -208,6 +208,7 @@ def status_msg(msg):
 
 class Andor:
     def __init__(self):
+        status_msg('Updated')
         status_msg('Starting Andor iKon L-936 Interface')
         self.lib = None
         self.totalCameras = None
