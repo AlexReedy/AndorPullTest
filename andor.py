@@ -9,6 +9,7 @@ from astropy.io import fits
 from test_transfer_to_remote import transfer
 
 SITE_ROOT = os.path.abspath(os.path.dirname(__file__) + '/../..')
+print(os.path.join(SITE_ROOT, 'config', 'logging.json'))
 
 with open(os.path.join(SITE_ROOT, 'config', 'logging.json')) as data_file:
     params = json.load(data_file)
