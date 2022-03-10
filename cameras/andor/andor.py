@@ -11,7 +11,7 @@ from test_transfer_to_remote import transfer
 SITE_ROOT = os.path.abspath(os.path.dirname(__file__) + '/../..')
 #print(os.path.join(SITE_ROOT, '../../config', 'logging.json'))
 print(SITE_ROOT)
-with open(os.path.join(SITE_ROOT, '../config', 'logging.json')) as data_file:
+with open(os.path.join(SITE_ROOT, 'config', 'logging.json')) as data_file:
     params = json.load(data_file)
 
 logger = logging.getLogger("andorLogger")
