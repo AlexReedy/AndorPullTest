@@ -5,7 +5,7 @@ import json
 
 class Camera:
 
-    def __init__(self, address='127.0.0.53', port=53):
+    def __init__(self, address='127.0.0.51', port=6942):
         """
 
         :param address:
