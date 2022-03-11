@@ -480,7 +480,7 @@ class Controller:
 
 if __name__ == "__main__":
     x = Controller(serial_number="", output_dir='/home/wintermute/sedm/images',
-                   send_to_remote=False, camera_handle=100)
+                   send_to_remote=True, camera_handle=100)
     if x.initialize():
         print("Camera initialized")
     else:
