@@ -83,8 +83,7 @@ class Controller:
         self.ctype2 = 'DEC--TAN'
         self.send_to_remote = send_to_remote
         if self.send_to_remote:
-            with open(os.path.join(SITE_ROOT, '../../config',
-                                   remote_config)) as conf_data_file:
+            with open(os.path.join('/home/wintermute/Software/AndorPullTest/config', 'test.config.json')) as conf_data_file:
                 tparams = json.load(conf_data_file)
                 print(tparams, "params")
             self.transfer = transfer(**tparams)
