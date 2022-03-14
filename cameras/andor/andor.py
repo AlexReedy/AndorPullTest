@@ -484,4 +484,4 @@ if __name__ == "__main__":
         print("Camera initialized")
     else:
         print("I need to handle this error")
-    x.take_image(exptime=0.0, readout=1.0)
+    #x.take_image(exptime=0.0, readout=1.0)
