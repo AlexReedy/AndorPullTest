@@ -210,7 +210,7 @@ class Controller:
 
         # Connect the camera and initializes it for operations
         try:
-            self.opt.SetCurrentCamera(camera_list[pos])
+            #self.opt.SetCurrentCamera(camera_list[pos])
             self.opt.Initialize()
         except Exception as e:
             print("ERROR")
@@ -475,6 +475,7 @@ class Controller:
             logger.error("Error writing data to disk", exc_info=True)
             return {'elaptime': time.time() - s,
                     'error': 'Error writing file to disk'}
+
 
 
 if __name__ == "__main__":
