@@ -10,6 +10,7 @@ import andor
 
 SITE_ROOT = os.path.abspath(os.path.dirname(__file__)+'/../..')
 
+# Test Update
 #with open(os.path.join(SITE_ROOT, '../../config', 'logging.json')) as data_file:
 #    params = json.load(data_file)
 
